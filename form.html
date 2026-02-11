@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title>Add recipe</title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2575.6">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="form.css">
+
+</head>
+<script src="form.js"></script>
+<body>
+
+  <main class="form-layout">
+
+
+    <section class="form-box">
+
+      <a href="index.html" class="back-arrow" aria-label="back to home page">
+        &larr;
+      </a>
+
+      <h1 class="form-title">Add recipe</h1>
+
+      <form id="form-recipe" novalidate>
+        <fieldset class="form-fieldset">
+          
+          <div class="form-row">
+            <label for="cake-size">Cake size (number of people):</label>
+            <div class="form-field">
+              <input
+                type="number"
+                id="cake-size"
+                name="cake_size"
+                placeholder="e.g. 12"
+              >
+              <p class="error-message" id="cake-size-error"></p>
+
+
+            </div>
+
+          </div>
+
+          <div class="form-row">
+            <label for="sponge-flavor">Sponge flavor:</label>
+            <div class="form-field">
+              <select id="sponge-flavor" name="sponge_flavor">
+                <option value="">Choose flavor...</option>
+                <option value="vanilla">Vanilla</option>
+                <option value="chocolate">Chocolate</option>
+                <option value="red-velvet">Red velvet</option>
+                <option value="lemon">Lemon</option>
+              </select>
+              <p class="error-message" id="sponge-flavor-error"></p>
+            </div>
+
+          </div>
+<!-- you can choose many fruits  -->
+          <div class="form-row">
+            <span class="form-label-static">Fruits on/in the cake:</span>
+            
+            <div class="form-field" id="fruits-field">
+              <label class="fruit-option">
+                <input type="checkbox" name="fruits" value="strawberry">
+                <span class="fruit-emoji">&#127827;</span>
+              </label>
+              <label class="fruit-option">
+                <input type="checkbox" name="fruits" value="blueberry">
+                <span class="fruit-emoji">&#129744;</span>
+              </label>
+              <label class="fruit-option">
+                <input type="checkbox" name="fruits" value="grape">
+                <span class="fruit-emoji">&#127815;</span>
+              </label>
+              <label class="fruit-option">
+                <input type="checkbox" name="fruits" value="kiwi">
+                <span class="fruit-emoji">&#x1F95D;</span>
+              </label>
+              <label class="fruit-option">
+                <input type="checkbox" name="fruits" value="pineapple">
+                <span class="fruit-emoji">&#127821;</span>
+              </label>
+              <label class="fruit-option">
+                <input type="checkbox" name="fruits" value="peach">
+                <span class="fruit-emoji">&#127825;</span>
+              </label>
+
+              <p class="error-message" id="fruits-error"></p>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <label for="social-handle">Social media handle (for contact):</label>
+            <div class="form-field">
+              <input type="text" id="social-handle" name="social_handle"
+                     placeholder="e.g. @sweetcakes">
+              <p class="error-message" id="social-handle-error"></p>
+            </div>
+
+          </div>
+
+        </fieldset>
+
+        <div class="form-actions">
+          <button type="submit" class="button-submit">Add recipe</button>
+          <button type="reset" class="button-reset">Start over</button>
+
+        </div>
+
+      </form>
+
+    </section>
+
+    <aside class="checklist">
+      <h2 class="checklist-title">Field checklist</h2>
+      <ul class="checklist-list">
+        <li class="checklist-item checklist-cake">Cake size</li>
+        <li class="checklist-item checklist-sponge">Sponge flavor</li>
+        <li class="checklist-item checklist-fruits">Fruits</li>
+        <li class="checklist-item checklist-handle">Social media handle</li>
+      </ul>
+
+    </aside>
+
+  </main>
+
+
+</body>
+</html>

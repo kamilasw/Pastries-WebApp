@@ -1,0 +1,177 @@
+
+
+
+.main-header-content{ 
+    height: 100%;
+    width: 100%;
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-image: url("tart_bilberry.png"), url("tart_blackberry.png"), linear-gradient(#FDF7ED, #FDF7ED);
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-size: auto auto, auto auto, cover;
+    background-position: 110% 105%, -10% -5%, center;
+    overflow:hidden;
+        border-radius: 0.75rem;
+}
+
+
+.main-header{
+    
+    height: 100vh; 
+    padding: 5%;
+    position: relative;
+    overflow:hidden;
+}
+
+.menu {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+}
+
+.menu-button {
+    border: none;
+    background: transparent;
+    font-size: 2rem;
+    line-height: 1;
+    cursor: pointer;
+    color: rgb(11, 1, 93);
+}
+
+.menu-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 3.7rem;       
+    right: 1.5rem;
+    display: none;   
+    align-items: flex-end;
+}
+
+.menu:hover + .menu-list,
+.menu-list:hover {
+    display: flex;             
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.5rem;
+}
+
+.menu-item {
+    background-color: rgba(11, 1, 93, 0.7);
+    border-radius:1rem;
+    padding: 0.5rem 1.5rem;
+    color: rgb(244, 240, 236);
+
+
+    width:100%;
+    min-width: 5rem;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+
+
+
+.title {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.title-content {
+    width: 60%;
+    background-color: #ffffff;
+    padding: 6rem 4rem;
+    text-align: center;
+    box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.06);
+    overflow-wrap: break-word;
+    border-radius: 0.75rem;
+}
+
+.title-header{
+    font-size:3rem;
+    
+}
+
+
+.title-subtitle {
+    margin-top: 0.75rem;
+    font-size: 2rem;
+}
+
+
+
+.featured {
+    margin: 0 auto;
+    width: 90%;
+
+    display: grid;
+    grid-template-columns:  minmax(0, 2fr) minmax(0, 3fr);;
+    column-gap: 3rem;
+    row-gap: 3rem;
+    align-items: flex-start;
+    overflow-wrap:break-word;
+    overflow:hidden;
+}
+
+.featured-content{
+    text-align: left;
+}
+
+#featured-title{
+    font-size: 3rem;
+}
+
+.featured-content + p {
+    margin-top: 1rem;
+
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    align-items: stretch;
+    margin-bottom:3rem;
+}
+
+.card {
+    margin-right: 1.2rem; /* ik that a card should fill the whole column but this is just so that the shadow is visible from the right side as well*/
+    display: grid;
+    grid-template-columns:  minmax(0rem, 9rem) 1fr;
+    background-color: #ffffff;
+    box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.3);
+    border-radius: 0.75rem;
+    overflow:hidden;
+    justify-content: left;
+}
+
+.card-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1.5rem;
+
+}
+
+.card-image img{
+    width: 40vmin;
+    height:auto;
+    object-fit: contain;
+}
+
+.card-content {
+    padding: 2rem;
+    justify-content: left;
+    overflow:hidden;
+    overflow-wrap:break-word;
+ 
+}

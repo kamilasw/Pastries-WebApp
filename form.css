@@ -1,0 +1,190 @@
+
+
+.form-layout{
+    max-width: 1100px;
+    margin: 6rem auto;
+    padding: 0 5%;
+
+    display: grid;
+    grid-template-columns:minmax(0, 2.5fr) minmax(0, 1fr);
+    column-gap: 2.5rem;
+    row-gap: 2.5rem;
+
+    align-items: flex-start;
+    position: relative;
+}
+
+
+
+.back-arrow {
+    position: absolute;
+    top: -3rem;
+    left: 0rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 0.75rem;
+    background-color: rgb(11, 1, 93);
+    color: #fdf7ed;
+    text-decoration: none;
+    font-size: 1.4rem;
+    line-height: 1;
+}
+
+.form-box {
+    background-color: #fbf4ea;
+    position: relative;
+    border-radius: 1rem;
+    padding: 2.5rem 3rem 2rem;
+}
+
+.form-title {
+    margin: 0 0 2rem;
+    font-size: 2rem;
+    color: rgb(11, 1, 93);
+    text-align: left;
+}
+
+.form-fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 14rem minmax(0, 1fr);
+    column-gap: 1.5rem;
+    align-items: center;
+    margin-bottom: 1.25rem;
+
+    
+}
+
+.form-row label,
+.form-label-static {
+    font-size: 0.95rem;
+    color: rgb(11, 1, 93);
+    text-align: left;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-field input[type="number"],
+.form-field input[type="text"],
+.form-field select {
+    padding: 0.6rem 0.75rem;
+    border-radius: 0.4rem;
+    border: 1px solid #ccc;
+    font: inherit;
+}
+
+.error-message {
+    min-height: 1.1rem;
+    margin: 0.25rem 0 0;
+    font-size: 0.8rem;
+    color: #b30000;     
+}
+
+#fruits-field {
+    flex-direction: row;
+    flex-wrap: wrap;        
+    gap: 0.4rem;
+}
+
+#fruits-field .fruit-option input {
+    display: none;
+}
+
+.fruit-emoji {
+    font-size: 1.2rem;
+    border-radius: 50%;
+}
+
+
+
+#fruits-field .fruit-option input:checked + .fruit-emoji {
+    background-color: #fdf7ed;
+    border-color: rgb(11, 1, 93);
+    box-shadow: 0 0 0 2px rgb(11, 1, 93);
+    
+}
+
+
+#fruits-field .fruit-option {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.1rem;
+    height: 2.1rem;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+
+.form-actions {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: flex-end;  
+    gap: 0.75rem;
+}
+
+.button-submit,
+.button-reset {
+    padding: 0.6rem 1.6rem;
+    border-radius: 0.4rem;
+    border: none;
+    font: inherit;
+    cursor: pointer;
+}
+
+.button-reset {
+    background-color: rgb(11, 1, 93);
+    color: #fdf7ed;
+}
+
+.button-submit:disabled {
+    background-color: #fdf7ed;
+    color: rgb(11, 1, 93);
+}
+
+.button-submit:enabled {
+    background-color: rgb(11, 1, 93);
+    color: #fdf7ed;
+}
+
+
+.checklist {
+    background-color: #fbf4ea;
+    border-radius: 1rem;
+    padding: 1.5rem 2rem;
+}
+
+.checklist-title {
+    margin: 0 0 1rem;
+    font-size: 1.2rem;
+    color: rgb(11, 1, 93);
+}
+
+.checklist-list {
+    margin: 0;
+    padding-left: 1.2rem;
+    font-size: 0.95rem;
+}
+
+.checklist-item {
+    color: rgb(11, 1, 93);
+    font-weight: normal;
+}
+
+.checklist-item.checklist-valid{
+    color: #198754;  
+    font-weight: 700;  
+}
